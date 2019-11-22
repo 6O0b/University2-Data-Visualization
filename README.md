@@ -154,6 +154,7 @@ C_infor
   * 핵심 룬 정보(Rune information)
   * 영문 표기( 한글표기 / 영문 줄임말 )
   * Precision(정밀/                               P)
+  
      Press the Attack(집중공격/                  Press)
      
      Lethal Tempo(치명적 속도/                   Letha)
@@ -162,6 +163,7 @@ C_infor
      
      Conqueror(정복자/                           Conqu)
   * Domination(지배/                              D)
+  
      Electrocute(감전/                           Elect)
      
      Predator(포식자/                            Preda)
@@ -170,18 +172,21 @@ C_infor
      
      Hail of Blades(칼날비/                      Hail )
   * Sorcery(마법/                                 S)
+  
      Summon Aery(콩콩이 소환/                    Summo)
      
      Arcane Comet(신비로운 유성/                 Arcan)
      
      Phase Rush(난입/                            Phase)
   * Resolve(결의/                                 R)
+  
      Grasp of the Undying(착취의 손아귀/         Grasp)
      
      Aftershock(여진/                            After)
      
      Guardian(수호자/                            Guard)
   * Inspiration(영감/                             I)
+  
      Glacial Augment(빙결 강화/                  Glaci)
      
      Unsealed Spellbook(봉인 풀린 주문서/        Unsea)
