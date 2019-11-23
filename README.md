@@ -16,12 +16,12 @@ CL_class <- html_nodes(CL_html, '.champion-index__champion-list')
 champlist <- CL_class %>% html_nodes("a") %>% html_attrs()
 
 champlist <- gsub("/champion/","",champlist)
+*  2019.11.22 기준 롤 챔피언 목록
 
 champlist <- gsub("/statistics","",champlist)
+*  트런들은 표본이 너무 작아 빠져서 추가 => 트런들 표본이 충분해지면 제거.
 
 champlist <- c(champlist[1:118],"trundle",champlist[119:145])
-
-*  2019.11.22 기준 롤 챔피언 목록 (트런들은 표본이 너무 작아 빠져서 추가)
 
 
 # 미드 라인을 가지 않는 챔피언 제외시키기 
