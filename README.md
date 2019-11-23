@@ -3,7 +3,7 @@
 
  * see install.packages("rvest")
 
-librayry(rvest)
+library(rvest)
 
 CL_url <- 'http://www.op.gg/champion/statistics'
 
