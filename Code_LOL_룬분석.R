@@ -13,7 +13,7 @@ champlist <- gsub("/statistics","",champlist)
 
 # 트런들은 표본이 너무 작아 빠져서 추가 => 트런들 표본이 충분해지면 제거.
 champlist <- c(champlist[1:118],"trundle",champlist[119:145])
-##
+#####
 
 # 미드 라인을 가지 않는 챔피언 제외시키기 
 Clist <- CL_class %>% html_children() %>% html_attrs()
@@ -97,38 +97,3 @@ C_infor <- extract(M_url[1])
 for(i in 2:length(champlist)) C_infor <- rbind(C_infor, extract(M_url[i]))
 colnames(C_infor) <- c("챔피언 이름", "  승률", "   픽률", "   티어", "    룬")
 C_infor
-
-#--------------------------------------------------------------------------------------------#
-# 핵심 룬 정보 
-# 영문 표기( 한글표기 / 영문 줄임말 )
-# Precision(정밀/                               P)
-#   Press the Attack(집중공격/                  Press)
-#   Lethal Tempo(치명적 속도/                   Letha)
-#   Fleet Footwork(기민한 발놀림/               Fleet)
-#   Conqueror(정복자/                           Conqu)
-# Domination(지배/                              D)
-#   Electrocute(감전/                           Elect)
-#   Predator(포식자/                            Preda)
-#   Dark Harvest(어둠의 수확/                   Dark )
-#   Hail of Blades(칼날비/                      Hail )
-# Sorcery(마법/                                 S)
-#   Summon Aery(콩콩이 소환/                    Summo)
-#   Arcane Comet(신비로운 유성/                 Arcan)
-#   Phase Rush(난입/                            Phase)
-# Resolve(결의/                                 R)
-#   Grasp of the Undying(착취의 손아귀/         Grasp)
-#   Aftershock(여진/                            After)
-#   Guardian(수호자/                            Guard)
-# Inspiration(영감/                             I)
-#   Glacial Augment(빙결 강화/                  Glaci)
-#   Unsealed Spellbook(봉인 풀린 주문서/        Unsea)
-#   Prototype: Omnistone(프로토타입: 만능의 돌/ Proto)
-
-# 핵심 룬 이름(Rune Name) 설정 
-#runa <- matrix(c('Press','Letha',"Fleet","Conqu",
-#                 "Elect","Preda","Dark","Hail",
-#                 "Summo","Arcan","Phase","",
-#                 "Grasp","After","Guard","",
-#                 "Glaci","Unsea","Proto",""), 4,5)
-#colnames(runa) <- c('P','D','S','R','I')
-#runa
